@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools on 程序员的魔法书</title><link>https://leetcode.coding3min.com/tools/</link><description>Recent content in Tools on 程序员的魔法书</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://leetcode.coding3min.com/tools/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://leetcode.coding3min.com/tools/components/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/tools/components/readme/</guid><description>这里存放了前端的各种组件
+canvas # 20行代码实现代码雨效果 code-rain</description></item><item><title/><link>https://leetcode.coding3min.com/tools/mac/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/tools/mac/readme/</guid><description>程序员的mac一些小技巧
+小问题 # brew install卡 暂时禁止自动更新，关闭窗口后失效
+export HOMEBREW_NO_AUTO_UPDATE=true 命令替代 # tree命令
+alias tree=&amp;#34;find . -print | sed -e &amp;#39;s;[^/]*/;|____;g;s;____|; |;g&amp;#39;&amp;#34;</description></item><item><title/><link>https://leetcode.coding3min.com/tools/mark-markdown-ppt/example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/tools/mark-markdown-ppt/example/</guid><description> Marp for VS Code方法 # 一种用markdown写ppt的vscode插件marp # 这款ppt就是我用“写”出来的，用来展示效果。
+幻灯片1
+asdf asdf 幻灯片2
+asdf asdf 左中右组合方式 # 在其中一张图片后加入属性 vertical 将使图片纵向组合。 # 设置左图右文 # 文字 文字 命令 单独看图片 # 可以看到图片已经放到右边了，非常舒服
+prometheus # 此处的图片加了阴影drop-shadow
+引用 # 技术分享之工具推荐-jeremyxu marp官方文档 Marp：用 Markdown「写」PPT 的新选择 官方github 谢谢 #</description></item><item><title/><link>https://leetcode.coding3min.com/tools/mark-markdown-ppt/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/tools/mark-markdown-ppt/readme/</guid><description>一种用markdown写PPT的方法，再也不用费劲排版了 # 本文原创首发于 一种用markdown写PPT的方法，再也不用费劲排版了
+示例:
+源文件 example.md 生成ppt example.pptx 前言 # 今天看 jeremyxu 的技术点滴，发现分享了一个 markdown 写 PPT 的插件，惊为天人，先来看看官方效果图。
+再看看 jeremyxu 写的效果，我学完了都没学会是怎么写的，直到看了他 项目样例我才算是真的学会了。
+参考 marp 官方文档可以很快学会用法，但是用的时候去翻比较麻烦，我提炼了常用的语法，最后做了一个 PPT 练手，才算是学会了，现在分享出来以便以后翻阅。
+marp 是个什么？ # 日常工作生活中常常会用到 ppt, 但是 ppt 有时候做起来非常浪费时间，如果不用关心排版，可以专注内容自动排版岂不妙哉？
+正好 markdown 就是解决排版的一种语言，有好心人自发开发了一个做 ppt 的利器，只用关注内容，简单分隔一下，稍微改一下样式就可以用了。
+安装和上手 # 下载个 VSCode, 天然支持 markdown ，然后在左侧的插件栏中搜索并安装 Marp for VS Code 就可以开始了。为了获得更好的 Markdown 编辑体验，大家不妨再安装一个叫做 Markdown All in One 的插件。
+使用 Markdown 输出一份最简单的幻灯片，只需要让编辑器知道两点即可：它是幻灯片（不是文档）以及它该在哪里分页，通过如下代码做到：</description></item><item><title/><link>https://leetcode.coding3min.com/tools/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/tools/readme/</guid><description>实用工具 # 工具名称 技术栈关键字 备注 markdown写PPT工具 vscode、markdown、ppt vscode的插件，从此不用再关心ppt排版 命令行自动演示工具 linux、demo 讲课、分享的时候假装在现场输入命令的作弊工具 运维工具 # 工具名称 技术栈关键字 备注 消耗CPU资源的脚本 shell、cpu 可设置占用多少cpu 前端组件库 # 分类 组件与效果 技术栈关键字 备注 背景 20行代码实现代码雨效果 canvas</description></item><item><title/><link>https://leetcode.coding3min.com/tools/scripts/devops/killcpu/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/tools/scripts/devops/killcpu/readme/</guid><description>使用方法很简单，参数3表示消耗3颗CPU的资源，运行后，会有一堆 kill 命令，方便 kill 进程：
+[root@test02 ~]# ./killcpu.sh 3 kill 30104 ; kill 30106 ; kill 30108 ; [root@test02 ~]# top top - 15:27:31 up 264 days, 23:39, 4 users, load average: 0.86, 0.25, 0.19 Tasks: 185 total, 5 running, 180 sleeping, 0 stopped, 0 zombie Cpu0 : 100.0% us, 0.0% sy, 0.0% ni, 0.0% id, 0.0% wa, 0.0% hi, 0.0% si Cpu1 : 0.0% us, 0.0% sy, 0.0% ni, 100.</description></item><item><title/><link>https://leetcode.coding3min.com/tools/scripts/show-demo-magic/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/tools/scripts/show-demo-magic/readme/</guid><description>报错？网卡？演示的时候别再尴尬，试试 demo-magic 假输入命令工具
+本文原创首发于 报错？网卡？演示的时候别再尴尬，试试 demo-magic 假输入命令工具
+简介 # 演示的时候要准确的输入很多命令，有时候会遭遇网比较卡，半天没反应，或者命令报错的尴尬，特别在大分享，众多人等待的情况下，只能面对面，干瞪眼。
+所以 demo-magic 就是解决这个问题的，他可以模拟你的输入输出，看起来就像现场打字一样，你还可以调整打字速度，可以随时暂定继续，满足演示的需要。
+如下图，就是全自动的，我特意让他在下载东西的时候停顿了1秒，在登陆的时候特意等待我按回车。
+用法 # 先到 github上把demo-magic.sh下载下来，放到任意目录里。
+我的目录结构
+. |____tools | |____demo-magic.sh |____cache | |____ls-al-cache.txt | |____install-pv-cache.txt |____run.sh demo-magic.sh 就是下载好的脚本 cache 用来保存准备好的输出 run.sh 测试脚本（假演示脚本） 这个工具 用法非常非常简单，简单到一看就会的程度。
+#/bin/bash # include demo-magic . ./tools/demo-magic.sh -n # Will wait max 1 seconds until user presses PROMPT_TIMEOUT=1 TYPE_SPEED=10 # hide the evidence clear p &amp;#34;ls -al&amp;#34; cat cache/ls-al-cache.txt p &amp;#34;brew install pv&amp;#34; wait cat cache/install-pv-cache.</description></item></channel></rss>

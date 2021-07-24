@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LeetCodes on 程序员的魔法书</title><link>https://leetcode.coding3min.com/leetcode/</link><description>Recent content in LeetCodes on 程序员的魔法书</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://leetcode.coding3min.com/leetcode/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://leetcode.coding3min.com/leetcode/all/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/leetcode/all/readme/</guid><description>请使用 vscode 中的 LeetCode 插件，自动创建文件、手动提交测试</description></item><item><title/><link>https://leetcode.coding3min.com/leetcode/difficult/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/leetcode/difficult/</guid><description>LeetCode-hot100-difficult # 介绍 # 一句话总结算法思路，LeetCode hot100 difficult
+按频率排序，排序依据参考 字节跳动后端高频面试题目。
+全部源码可见我的GitHub interview-leetcode
+注：
+有下划线标志的都是超链接。 点击下列题目标题可以跳转到LeetCode中文官网直接阅读题目，提交代码。 点击下列代码链接，可以直接跳转到我的GitHub代码页面。每道题一般精选一种解法，我的GitHub中可能收录多种解法代码，请自行查看。
+题解 # 42.接雨水 # 题目： 接雨水，给定整数数组，把他想象成柱状图，凹槽部分接雨水总合
+题解：用栈的思路比较难理解，我写在代码里了，有兴趣可以自己看看，这里推荐双指针的思路
+双指针下标l和r指向0和len-1，记录左侧最大值height[0]和右侧最大值height[len-1] 判断左侧和右侧最大值哪个更小，更小侧向内测移动，比如 if lMax&amp;lt;rMax then l++ 如果当前指针位置比lMax要小，又因为此时rMax&amp;gt;lMax说明此处一定会出现低洼，它被两侧包住了，一定不会渗水；水的高度是由更小的最大值决定，现在是lMax 统计水量res += lMax - height[l]，如果当前指针比lMax大，说明左侧包不住，更新左侧最大值 上面1、2、3步骤的动作else 反过来，r--; if height[r]&amp;lt;rMax then res+= rMax-height[r] else rMax = height[r] 循环条件l&amp;lt;r,函数至少要3个值才有可能形成低洼，所以边界是len&amp;lt;3 return 0 代码： golang
+题目：
+题解：</description></item><item><title/><link>https://leetcode.coding3min.com/leetcode/easy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/leetcode/easy/</guid><description>LeetCode-hot100-easy # 介绍 # 一句话总结算法思路，LeetCode hot100 easy
+总计21题，题目列表请戳 LeetCode Hot100 easy 列表。
+全部源码可见我的GitHub interview-leetcode
+注：
+有下划线标志的都是超链接。 点击下列题目标题可以跳转到LeetCode中文官网直接阅读题目，提交代码。 点击下列代码链接，可以直接跳转到我的GitHub代码页面。每道题一般精选一种解法，我的GitHub中可能收录多种解法代码，请自行查看。
+题解 # 1.两数之和(高频) # 题目： 数据中是否有两个数之和为目标值
+题解：遍历数组，用目标值减去当前值，判断HashMap是否有值存在，如果有则创建新数组返回两者，如果没有循环遍历完返回空数组
+时间复杂度：O(1) 代码： golang
+20.有效的括号(高频) # 题目： 存在[]{})(的字符串，判断是否合法
+题解： 存储左括号和右括号的映射，用栈统计左括号，出现左括号就入栈，出现右括号就和栈顶在map中映射的右括号比较，如果匹配就出栈，不匹配返回false，最后遍历完栈空为false
+注意：go语言可以用byte代表单个字符
+代码： golang
+21.合并两个有序链表(高频) # 题目： 两个升序链表，合并成一个
+题解：
+需要一个空的头节点做辅助，head.Next就是结果 每次遍历始终维护上一个节点prev，初始值prev=head 循环遍历两个链表，循环条件都不为空，每次把当前节点更小的取出来即可 prev.Next = l1 prev = l1 l1 = l1.Next 最后加入有不为空的节点，则直接赋值 if l1!=nil{ prev.Next = l1 }else{ prev.</description></item><item><title/><link>https://leetcode.coding3min.com/leetcode/hot100/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/leetcode/hot100/readme/</guid><description>介绍 # 题目列表请戳 [LeetCode-Hot100列表](https://leetcode-cn.com/problemset/leetcode-hot-100/
+算法 LeetCode Hot 100 思路与代码，请点击相应目录查看
+最后 # 如果文中有误，欢迎提pr或者issue，一旦合并或采纳作为贡献奖励可以联系我直接无门槛加入 技术交流群</description></item><item><title/><link>https://leetcode.coding3min.com/leetcode/hua-wei-ji-shi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/leetcode/hua-wei-ji-shi/</guid><description>华为机试 # 字符串余 # 输入若干字符串和一个数字n，按8切分字符串，长度不足补0
+示例：
+输入：asdf 123456789 输出：asdf0000 12345678 90000000 func splitStr(str string,n int){ zeroStr := &amp;#34;00000000&amp;#34; for len(str)&amp;gt;8{ fmt.Println(str[:8]) str = str[8:] } fmt.Println(str+zeroStr[:8-len(str)]) } 货币汇率兑换算法 # 知道各货币兑换另一种货币的汇率，要求求最大兑换和最小可兑换货币
+USD - RMB 1:6 RMB - HKD 1:2 HKD - JAN 1:20
+示例：
+输入HKD = 65 最大可兑换 USD=10,RMB=5 最小可兑换 JAN=2600 函数
+// 顺序输入UDB RMB HKD 汇率，比如上面的例子，输入[6 2 20] // moneyType = 0 1 2 3 对应 USD RMB HKD JAN，money对应货币数量 // isMax = true 时求最大可兑换 false 时求最小可兑换 // 返回兑换情况，最大[5,2,1,0]，最小[0,0,0,1300] func xxx(rate []int,moneyType int,money int,isMax bool) []int{ } 解法,代码见 货币汇率兑换算法.</description></item><item><title/><link>https://leetcode.coding3min.com/leetcode/medium/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/leetcode/medium/</guid><description>LeetCode-hot100-medium # 介绍 # 一句话总结算法思路，LeetCode hot100 medium
+按频率排序，排序依据参考 字节跳动后端高频面试题目。
+全部源码可见我的GitHub interview-leetcode
+注：
+有下划线标志的都是超链接。 点击下列题目标题可以跳转到LeetCode中文官网直接阅读题目，提交代码。 点击下列代码链接，可以直接跳转到我的GitHub代码页面。每道题一般精选一种解法，我的GitHub中可能收录多种解法代码，请自行查看。
+3.无重复字符的最长子串 # 题目： 在字符串中找一个子串，要求连续无重复字符且最长，只需要返回最大长度
+题解：
+字符串长度为0直接返回 记录最大子串的长度，用来和新子串长度比较，维护子串的状态还需要记录当前子串的起始位置的下标 使用map来储存字符对应的下标， 只要当前字符出现在map里，同时map里的字符就是子串里的字符时（存储的字符下标大于等于起始位置下标）说明重复，更新子串起始位置为map中记录的重复点+1 else (没有出现在子串里)，子串长度++，判断更新最大长度(注意更新时+1) 代码： golang
+215.数组中的第k个最大元素 # 题目： 数组中的第k个最大元素
+题解： 方法1，堆排序（不推荐）
+求第K大的数，实际上就是取小根堆的根节点 小根堆的性质，根节点比所有叶子节点更小 注意：这里为什么用堆，是因为堆是一个完全二叉树，而二叉搜索树不自平衡，而且堆的话小根堆直接取根节点就是结果了
+方法2 快速排序变形（快速选择算法）
+其实就是快排的思路，只是做了下剪枝 只要保证len-k这个位置右侧全部比k大，左侧全部小于等于k，那么len-k位置的数就是第k大 因为我们不知道是哪个数，所以随便取一个数x，最终达到左侧全部&amp;lt;=x，右侧全部&amp;gt;x的效果 把x的下标index和len-k比较，如果小，说明第k大数一定在[index+1,r]；如果大说明第k大数一定在[l,index-1]中 缩小区间，继续随便取一个数，直到正好x的下标就是len-k为止 查找中枢的办法借助快排的思路
+随机取一个数x，把他和r位置的数对调 维护左侧区间都比x小，所以初始化i为l-1 变量j遍历[l,r) 左闭右开区间，大于x无操作 小于x时候,i++，然后对调i和j位置的数字，这样又可以保证i左侧包括i位置的数都小于x 遍历结束以后i+1位置的数正好是最后一个比i大的数，把他和r对调 返回i+1，也就是中枢位置的下标 时间复杂度：运气好就是一次就找到了On运气不好每个数都找了一次ON^2，算法导论中把每次查找都使用一个随机数，可以显著提高效率，趋近于On，具体为什么可以自己去看
+为什么推荐用快选，因为空间O1，时间On~On^2比堆的时间Onlogn和Ologk更快，但是快排也有局限性
+快选需要修改原数组，如果原数组不能修改的话，还需要拷贝一份数组，空间复杂度就上去了。 堆只需要保存 k 个元素的小根堆。快速排序变形的方法如果不允许修改原数组那就要保存下来所有的数据，所以数据量大时用堆更好 引用： 优劣比较</description></item><item><title/><link>https://leetcode.coding3min.com/leetcode/other/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/leetcode/other/</guid><description>其他高频算法 # 其他高频 # medium # 120.三角形最小路径和 # 题目： 求三角形的最小路径和
+要求是每一步只能找下一行的相邻节点，也就是当前行的下标 i ，那么下一步可以移动到下一行的下标 i 或 i + 1
+输入：triangle = [[2],[3,4],[6,5,7],[4,1,8,3]] 输出：11 解释：如下面简图所示： 2 3 4 6 5 7 4 1 8 3 自顶向下的最小路径和为 11（即，2 + 3 + 5 + 1 = 11）。 题解：从三角形底部向上遍历
+[ [2], [3,4], [6,5,7], [4,1,8,3] ] 相邻结点：与(i, j) 点相邻的结点为 (i + 1, j) 和 (i + 1, j + 1)。 用一个一维度数组dp [n+1]int来存储最终结果，保证每个值都是最优解 方程 min(dp[j],dp[j+1]) + triangle[i][j] 注意：</description></item><item><title/><link>https://leetcode.coding3min.com/leetcode/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/leetcode/readme/</guid><description>面试算法 # 介绍 # 这里是所有的算法题目，建议先刷hot100再刷剑指Offer
+请直接点击相应目录查看
+最后 # 如果文中有误，欢迎提pr或者issue，一旦合并或采纳作为贡献奖励可以联系我直接无门槛加入 技术交流群</description></item><item><title/><link>https://leetcode.coding3min.com/leetcode/shu-ju-jie-gou/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/leetcode/shu-ju-jie-gou/</guid><description>数据结构 # 树 # 基本概念 # 树有多个节点(node)，用以储存元素 节点之间的连线称为边(edge) 边的上端节点称为父节点 下端称为子节点 树的深度(depth)是从根节点开始（其深度为1）自顶向下逐层累加的 高度的定义为：从结点x向下到某个叶结点最长简单路径中边的条数 深度是从根节点往下 二叉树 # 常见的二叉树：完全二叉树，满二叉树，二叉搜索树，二叉堆，AVL 树，红黑树，哈夫曼树
+完全二叉树：若设二叉树的深度为 h，除第 h 层外，其它各层 (1～h-1) 的结点数都达到最大个数，第 h 层所有的结点都连续集中在最左边（效率高） 满二叉树：除最后一层无任何子节点外，每一层上的所有结点都有两个子结点的二叉树 二叉搜索树（二叉排序树，二叉查找树） 树中每个节点最多有两个子树，通常称为左子树和右子树 若它的左子树不空，则左子树上所有结点的值均小于它的根结点的值 若它的右子树不空，则右子树上所有结点的值均大于它的根结点的值 它的左右子树仍然是一棵二叉搜索树 (recursive) 平衡树(B树) 排序方式：所有节点关键字是按递增次序排列，并遵循左小右大原则； 子节点数：1&amp;lt;非叶节点的子节点数&amp;lt;=M ，且M&amp;gt;=2，空树除外（注：M阶代表一个树节点最多有多少个查找路径，M=M路, 当M=2则是2叉树, M=3则是3叉） 关键字数：ceil(m/2)-1&amp;lt;=枝节点的关键字数量&amp;lt;=M-1个（注：ceil()是个朝正无穷方向取整的函数 如ceil(1.1)结果为2); 所有叶子节点均在同一层、叶子节点除了包含了关键字和关键字记录的指针外也有指向其子节点的指针只不过其指针地址都为null对应下图最后一层节点的空格子 B+树 特点 B+树的非叶子节点不保存关键字记录的指针，只进行数据索引（非叶子节点所能保存的关键字大大增加） B+树叶子节点保存父节点的所有关键字记录的指针，数据地址必须要到叶子节点才能获取到（每次数据查询的次数都一样） B+树叶子节点的关键字从小到大有序排列，左边结尾数据都会保存右边节点开始数据的指针 非叶子节点的子节点数=关键字数（两种实现，或：非叶节点的关键字数=子节点数-1。Mysql 的B+树是第一种） 与红黑树的比较（访问磁盘数据有更高的性能） B+ 树有更低的树高</description></item><item><title/><link>https://leetcode.coding3min.com/leetcode/suan-fa-mian-shi-zhu-yi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/leetcode/suan-fa-mian-shi-zhu-yi/</guid><description>算法面试注意 # 算法思维 # 进入函数优先考虑边界 如果出现循环，进入循环时考虑break条件和continue条件 使用下标计算长度时，优先考虑区间的开闭 我们应该在做算法的过程总不断的思考和总结共性 面试注意 # 一定要记得常用的函数，现场是没有办法可以查的
+字符串去左右空格 字符串切割 随机数种子，随机数生成 内置排序函数 int最小值最大值怎么取 以go为例
+s = strings.TrimSpace(s) arr := strings.Split(s,&amp;#34;&amp;#34;) rand.Seed(time.Now().UnixNano()) rand.Int() sort.Int() sort.Slice(x,func(i,j int)bool{ // 降序 return x[i]&amp;gt;x[j] }) math.MaxInt32 math.MinInt32 牛客网面试注意 # 牛客网比较坑，一切输入输出都要自己实现
+还要劳记链表创建代码， 完整代码
+package main import( &amp;#34;fmt&amp;#34; ) type LinkNode struct{ Val int Next *LinkNode } func createNode(a []int) *LinkNode{ head :=&amp;amp;LinkNode{ 0, nil, } prev := head for i:=0;i&amp;lt;len(a);i++{ node := &amp;amp;LinkNode{ a[i], nil, } prev.</description></item></channel></rss>
