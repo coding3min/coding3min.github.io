@@ -9,7 +9,7 @@ asdf asdf 左中右组合方式 # 在其中一张图片后加入属性 vertical 
 prometheus # 此处的图片加了阴影drop-shadow
 引用 # 技术分享之工具推荐-jeremyxu marp官方文档 Marp：用 Markdown「写」PPT 的新选择 官方github 谢谢 #</description></item><item><title/><link>https://leetcode.coding3min.com/tools/mark-markdown-ppt/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/tools/mark-markdown-ppt/readme/</guid><description>一种用markdown写PPT的方法，再也不用费劲排版了 # 本文原创首发于 一种用markdown写PPT的方法，再也不用费劲排版了
 示例:
-源文件 example.md 生成ppt example.pptx 前言 # 今天看 jeremyxu 的技术点滴，发现分享了一个 markdown 写 PPT 的插件，惊为天人，先来看看官方效果图。
+源文件 example 生成ppt example.pptx 前言 # 今天看 jeremyxu 的技术点滴，发现分享了一个 markdown 写 PPT 的插件，惊为天人，先来看看官方效果图。
 再看看 jeremyxu 写的效果，我学完了都没学会是怎么写的，直到看了他 项目样例我才算是真的学会了。
 参考 marp 官方文档可以很快学会用法，但是用的时候去翻比较麻烦，我提炼了常用的语法，最后做了一个 PPT 练手，才算是学会了，现在分享出来以便以后翻阅。
 marp 是个什么？ # 日常工作生活中常常会用到 ppt, 但是 ppt 有时候做起来非常浪费时间，如果不用关心排版，可以专注内容自动排版岂不妙哉？

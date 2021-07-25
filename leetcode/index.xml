@@ -21,7 +21,7 @@
 代码： golang
 21.合并两个有序链表(高频) # 题目： 两个升序链表，合并成一个
 题解：
-需要一个空的头节点做辅助，head.Next就是结果 每次遍历始终维护上一个节点prev，初始值prev=head 循环遍历两个链表，循环条件都不为空，每次把当前节点更小的取出来即可 prev.Next = l1 prev = l1 l1 = l1.Next 最后加入有不为空的节点，则直接赋值 if l1!=nil{ prev.Next = l1 }else{ prev.</description></item><item><title/><link>https://leetcode.coding3min.com/leetcode/hot100/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/leetcode/hot100/readme/</guid><description>介绍 # 题目列表请戳 [LeetCode-Hot100列表](https://leetcode-cn.com/problemset/leetcode-hot-100/
+需要一个空的头节点做辅助，head.Next就是结果 每次遍历始终维护上一个节点prev，初始值prev=head 循环遍历两个链表，循环条件都不为空，每次把当前节点更小的取出来即可 prev.Next = l1 prev = l1 l1 = l1.Next 最后加入有不为空的节点，则直接赋值 if l1!=nil{ prev.Next = l1 }else{ prev.</description></item><item><title/><link>https://leetcode.coding3min.com/leetcode/hot100/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/leetcode/hot100/readme/</guid><description>介绍 # 题目列表请戳 LeetCode-Hot100列表
 算法 LeetCode Hot 100 思路与代码，请点击相应目录查看
 最后 # 如果文中有误，欢迎提pr或者issue，一旦合并或采纳作为贡献奖励可以联系我直接无门槛加入 技术交流群</description></item><item><title/><link>https://leetcode.coding3min.com/leetcode/hua-wei-ji-shi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://leetcode.coding3min.com/leetcode/hua-wei-ji-shi/</guid><description>华为机试 # 字符串余 # 输入若干字符串和一个数字n，按8切分字符串，长度不足补0
 示例：
